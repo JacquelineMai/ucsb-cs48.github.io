@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-
+gem install bundler
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-rvm use 2.5.3
+rvm install ruby --latest
+rvm use ruby --latest
 bundle exec jekyll serve
